@@ -3,12 +3,13 @@
 Enhanced Python Blockchain Project
 This project implements a basic blockchain with several enhanced features using Python:
 
-Core Blockchain: Blocks, chain structure, hashing (SHA-256).
-Transactions: Simple sender/recipient/amount structure.
-Proof-of-Work (PoW): Basic nonce-finding algorithm.
-Dynamic Difficulty Adjustment: Adjusts mining difficulty based on block times to maintain a target interval.
-ECDSA Signatures: Transactions are signed using ECDSA (secp256k1 curve via cryptography library) for authenticity and integrity. Signatures are verified before adding transactions to the pool or blocks.
-Wallet: Basic wallet class for managing ECDSA key pairs (generation, conceptual loading/saving - INSECURE STORAGE), signing transactions, and calculating balances by scanning the chain.
+1. **Core Blockchain**: Blocks, chain structure, hashing (SHA-256).
+2. **Transactions**: Simple sender/recipient/amount structure
+3. **Proof-of-Work (PoW)**: Basic nonce-finding algorithm.
+4. **Dynamic Difficulty Adjustment**: Adjusts mining difficulty based on block times to maintain a target interval.
+5. **ECDSA Signatures**: Transactions are signed using ECDSA (secp256k1 curve via cryptography library) for authenticity and integrity. Signatures are verified before adding transactions to the pool or blocks.
+6. **Wallet**: Basic wallet class for managing ECDSA key pairs (generation, conceptual loading/saving - INSECURE STORAGE), signing transactions, and calculating balances by scanning the chain.
+
 P2P Networking (Flask): Uses Flask to create API endpoints for node communication:
 Node registration (/nodes/register)
 Transaction submission and broadcasting (/transactions/new, /transactions/receive)
@@ -17,6 +18,7 @@ Block broadcasting (/blocks/receive)
 Chain retrieval (/chain)
 Consensus resolution (longest valid chain rule via /nodes/resolve)
 Conceptual Proof-of-Stake: Includes explanations of PoS principles (not implemented in code).
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Setup
